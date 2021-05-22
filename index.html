@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário</h1>
+            <p>Obrigado por estar contribuindo</p>
+        </header>
+        <form id="form">
+        <div class="input-group">
+          <label for="nome">Nome</label>  
+          <input id="nome" type="text" name="nome" placeholder="Digite seu nome." required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu email." required>
+        </div>
+        <div class="input-group">
+            <select name="genero" id="genero" required>
+                <option disabled selected value="">Qual a sua preferência?</option>
+                <option value="masculino">Salgado</option>
+                <option value="Feminino">Doce</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <p>Deseja receber nossas novidades?</p>
+            <label><input type="radio" name="deseja" value="sim" class="input-radio" >Sim</label>
+            <label><input type="radio" name="deseja" value="nao" class="input-radio">Não</label>
+        </div>
+        <div class="input-group" id="input-checkbox">
+            <p>O que você mais pede aqui na plataforma?</p>
+            <label><input  name="escolha" value="pizza" type="checkbox" class="input-checkbox">Pizza</label>
+            <label><input  name="escolha" value="esfirra" type="checkbox" class="input-checkbox">Esfirra</label>
+            <label><input  name="escolha" value="lanche" type="checkbox" class="input-checkbox">Lanche</label>
+            <label><input  name="escolha" value="porcoes" type="checkbox" class="input-checkbox">Porções</label>
+            <label><input  name="escolha" value="sobremesas" type="checkbox" class="input-checkbox">Sobremesas</label>
+            <label><input  name="escolha" value="bebidas" type="checkbox" class="input-checkbox">Bebidas</label>
+        </div>
+        <div class="input-group">
+            <p>Deixe seu comentário ou sugestões.</p>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deixe seu comentário."></textarea>
+        </div>
+        <div id="id-button">
+            <button type="submit" id="enviar">Enviar</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
